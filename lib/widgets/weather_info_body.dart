@@ -23,43 +23,42 @@ class WeatherInfoBody extends StatelessWidget {
               fontSize: 24,
             ),
           ),
-          const SizedBox(
-            height: 32,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Image.asset(
-                'assets/images/cloudy.png',
-              ),
-              const Text(
-                '17',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 32,
+
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 32,horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Image.asset(
+                  'assets/images/cloudy.png',
                 ),
-              ),
-              const Column(
-                children: [
-                  Text(
-                    'Maxtemp: 24',
-                    style: TextStyle(
-                      fontSize: 16,
-                    ),
+                const Text(
+                  '17',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 32,
                   ),
-                  Text(
-                    'Mintemp: 16',
-                    style: TextStyle(
-                      fontSize: 16,
+                ),
+                const Column(
+                  children: [
+                    Text(
+                      'Maxtemp: 24',
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
                     ),
-                  ),
-                ],
-              ),
-            ],
+                    Text(
+                      'Mintemp: 16',
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
-          const SizedBox(
-            height: 32,
-          ),
+
           const Text(
             'Ligh Rain',
             style: TextStyle(
