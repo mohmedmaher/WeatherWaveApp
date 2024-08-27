@@ -1,6 +1,6 @@
 import 'package:weather_wave/models/weather_model.dart';
 
-class WeatherState {}
+class WeatherState {} 
 
 class WeatherInitialState extends WeatherState {}
 

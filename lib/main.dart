@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
         return BlocBuilder<GetWeatherCubit, WeatherState>(
           builder: (context, state) {
             return MaterialApp(
+              debugShowCheckedModeBanner: false,
               theme: ThemeData(
                   primaryColor: getThemeColor(
                       BlocProvider
